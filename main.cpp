@@ -30,11 +30,10 @@ void Randomise(int *arr, int len)
 
 bool CheckSorted(int *arr, int len)
 {
-    bool sorted = true;
     for (int i = 0; i < len-1; i++)
         if (arr[i] > arr[i+1])
-            sorted = false;
-    return sorted;
+            return false;
+    return true;
 }
 
 void BogoSort(int *arr, int len)
